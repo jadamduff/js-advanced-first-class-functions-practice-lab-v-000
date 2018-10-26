@@ -17,5 +17,12 @@ function driversByRevenue(drivers) {
   let newArr = [...drivers];
   return newArr.sort(function(a, b) {
     return a.revenue - b.revenue
-  })
+  });
+}
+
+function driversByName(drivers) {
+  let newArr = [...drivers];
+  return newArr.sort(function(a, b) {
+    return a.localeCompare(b);
+  });
 }
